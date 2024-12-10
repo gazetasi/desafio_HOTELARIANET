@@ -29,4 +29,10 @@ PROPOSTA
 2 - // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
                
                 throw new System.InvalidOperationException("O número máximo de reservas já foi concluído!\n Atenção não existem mais vagas...");
+
+3 -  // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
+
+            int quantidadeHospedes = this.Hospedes.Count;
+            
+            return quantidadeHospedes;
            
