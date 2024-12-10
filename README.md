@@ -35,4 +35,12 @@ PROPOSTA
             int quantidadeHospedes = this.Hospedes.Count;
             
             return quantidadeHospedes;
+
+4 -  // TODO: Retorna o valor da diária
+
+            // Cálculo: DiasReservados X Suite.ValorDiaria
+            decimal valor = 0;
+            
+            valor = DiasReservados * Suite.ValorDiaria;
+
            
