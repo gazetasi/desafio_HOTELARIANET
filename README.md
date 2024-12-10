@@ -21,7 +21,12 @@ Diagrama de classe estacionamento
 Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
 
-PROPOSTA
+**********************************************************
+
+PROPOSTAS DE COMPLEMENTOS 
+
+***********************************************************
+
 1 -  // TODO: Verificar se a capacidade é maior ou igual ao número de hóspedes sendo recebido
             
             bool validaCapacidade = Suite.Capacidade >= hospedes.Count;
@@ -32,15 +37,22 @@ PROPOSTA
 
 3 -  // TODO: Retorna a quantidade de hóspedes (propriedade Hospedes)
 
-            int quantidadeHospedes = this.Hospedes.Count;
-            
+            int quantidadeHospedes = this.Hospedes.Count;            
             return quantidadeHospedes;
 
 4 -  // TODO: Retorna o valor da diária
 
             // Cálculo: DiasReservados X Suite.ValorDiaria
-            decimal valor = 0;
-            
+            decimal valor = 0;            
             valor = DiasReservados * Suite.ValorDiaria;
+5 - // Regra: Caso os dias reservados forem maior ou igual a 10, conceder um desconto de 10%
+
+            bool validaDesconto = this.DiasReservados >= 10;
+            if (validaDesconto)
+            {
+                valor = valor * (10 / 100);
+            }
+
+            return valor;
 
            
