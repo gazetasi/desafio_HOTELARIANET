@@ -25,3 +25,9 @@ PROPOSTA
 1 -  // TODO: Verificar se a capacidade é maior ou igual ao número de hóspedes sendo recebido
             
             bool validaCapacidade = Suite.Capacidade >= hospedes.Count;
+
+2 -   else
+            {
+                // TODO: Retornar uma exception caso a capacidade seja menor que o número de hóspedes recebido
+                throw new System.InvalidOperationException("O número máximo de reservas já foi concluído!\n Atenção não existem mais vagas...");
+            }
