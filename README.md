@@ -55,4 +55,15 @@ PROPOSTAS DE COMPLEMENTOS
 
             return valor;
 
+6 -   Usando a biblioteca System.Globalization; 
+          
+          CultureInfo culturaBrasileira = new CultureInfo("pt-BR");
+
+7 - Usando recursos da classe String para formatar em moeda a saída do valor da reserva
+
+             string valorReais = String.Format("{0:C2}", reserva.CalcularValorDiaria()); 
+            Console.WriteLine($"Valor diária: {valorReais}");
+
+
+
            
